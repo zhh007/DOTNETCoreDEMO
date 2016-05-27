@@ -492,6 +492,22 @@
           "lib/netstandard1.1/Microsoft.Extensions.Logging.Abstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.Logging.Console/1.0.0-rc2-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "1.0.0-rc2-final",
+          "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc2-final",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-final",
+          "System.Console": "4.0.0-rc2-24027",
+          "System.Threading": "4.0.11-rc2-24027"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.Extensions.Logging.Console.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.Extensions.Logging.Console.dll": {}
+        }
+      },
       "Microsoft.Extensions.ObjectPool/1.0.0-rc2-final": {
         "type": "package",
         "dependencies": {
@@ -2855,6 +2871,18 @@
         "lib/netcore50/Microsoft.Extensions.Logging.Abstractions.xml",
         "lib/netstandard1.1/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/netstandard1.1/Microsoft.Extensions.Logging.Abstractions.xml"
+      ]
+    },
+    "Microsoft.Extensions.Logging.Console/1.0.0-rc2-final": {
+      "sha512": "wzTVkE0h7xKPB7PF/XMgTIuvckjzscgDqvpr2QhqMYxXeni7dUqAO8FUy4DQ8MljXikgLbKSUvJS9HgMhFD3ng==",
+      "type": "package",
+      "files": [
+        "Microsoft.Extensions.Logging.Console.1.0.0-rc2-final.nupkg.sha512",
+        "Microsoft.Extensions.Logging.Console.nuspec",
+        "lib/net451/Microsoft.Extensions.Logging.Console.dll",
+        "lib/net451/Microsoft.Extensions.Logging.Console.xml",
+        "lib/netstandard1.3/Microsoft.Extensions.Logging.Console.dll",
+        "lib/netstandard1.3/Microsoft.Extensions.Logging.Console.xml"
       ]
     },
     "Microsoft.Extensions.ObjectPool/1.0.0-rc2-final": {
@@ -7382,6 +7410,7 @@
     "": [
       "Microsoft.AspNetCore.Server.IISIntegration >= 1.0.0-rc2-final",
       "Microsoft.AspNetCore.Server.Kestrel >= 1.0.0-rc2-final",
+      "Microsoft.Extensions.Logging.Console >= 1.0.0-rc2-final",
       "Microsoft.NETCore.App >= 1.0.0-rc2-3002702"
     ],
     ".NETCoreApp,Version=v1.0": []
